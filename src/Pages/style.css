@@ -1,0 +1,102 @@
+/* App.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the entire app */
+.app-container {
+    height: 100vh;
+    background: url('./image.png') no-repeat center center fixed; /* Set the background image */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: rgba(128, 0, 128, 0.7); /* Purple background with transparency */
+    padding: 15px;
+    position: fixed; /* Keep navbar at the top */
+    width: 100%;
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Main content area to provide padding below the navbar */
+main {
+    margin-top: 60px; /* Adjust based on the height of the navbar */
+    flex: 1; /* Make main fill available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Specific styles for Sign Up and Login pages */
+/* Form styling */
+.signup-form {
+    background-color: rgba(105, 98, 108, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+/* Table styling */
+.signup-form table {
+    width: 100%;
+}
+
+/* Input fields styling */
+.signup-form input[type="text"], 
+.signup-form input[type="email"], 
+.signup-form input[type="password"], 
+.signup-form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button styling */
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ea2ebb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #3e1253;
+}
+
+/* Heading styling */
+.signup-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
